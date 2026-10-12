@@ -25,3 +25,4 @@ Potential missing values in application characteristics and decision dates will 
 - Evaluation Metrics: Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE)
 - Privacy, Fairness, Misuse, and Responsible ML Risks:
 The dataset contains sensitive information, including applicant names and addresses. These variables will be excluded from modelling as they are unnecessary for predicting processing time. Differences in predicted processing times between local authorities or application types will be interpreted carefully and will not automatically be treated as evidence of differences in authority performance. Predictions will be treated as estimates rather than guarantees of how long an individual application will take.
+-The data will be split via a time-based split using submission date. 
