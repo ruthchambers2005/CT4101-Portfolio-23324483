@@ -29,4 +29,4 @@ The dataset contains sensitive information, including applicant names and addres
 
 
 # Required Packages
--pandas: data loading, inspection, duplicate analysis, date conversion and summary statistics. 
+- pandas: data loading, inspection, duplicate analysis, date conversion and summary statistics. 
