@@ -28,5 +28,29 @@ The dataset contains sensitive information, including applicant names and addres
 -The data will be split via a time-based split using submission date.
 
 
-# Required Packages
-- pandas: data loading, inspection, duplicate analysis, date conversion and summary statistics. 
+
+# Project Progress
+The following work has been completed: 
+- Initial dataset inspection and data-quality assesment.
+- Investigation of exact duplicates and repeated apllication references.
+- Creation and Validation of the processing-time target variable.
+- Missing-data analysis using the supporting BCMS document.
+- Initial feature selection and data leakage assesment.
+- Investigation of invalid and extreme numerical values.
+
+
+# Requiremnts
+- Python
+- Jupyter Notebook
+- Required packages listed in requiremnts.txt
+
+# Evaluation Plan
+The initial baseline will predict the median application processing time calculated from the training data. 
+
+Model performance will be evaluated using Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE).
+
+# Responsible Machine Learning
+The project considers data leakage, incomplete records, potentially erroneous measurements and the handling of personal information. direct application identifiers will not be used as model predictors. 
+
+# Assistance and References
+External documentation, code sources and any use of generative AI or coding assistants will be acknowledged in the project submission. 
