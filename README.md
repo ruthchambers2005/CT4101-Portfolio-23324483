@@ -18,7 +18,7 @@ This is a regression question. The outcome of the machine learning model is to p
 # Other Information about this project
 - Target variable:  Application processing time in days, obtained from date of submission and date of decision
 - Main Input Features: Application type, local authority, classification and use of the proposed building/works, construction type, floor area, number of storeys and site area. 
-- Approximate Number of Records: 42,862, after cleaning and preparation: 42,711
+- Approximate Number of Records: Initial: 43,619, after removing duplicated: 42,862, after cleaning and preparation: 42,711
 - Data-Quality Issues:
 Potential missing values in application characteristics and decision dates will need to be investigated. Date variables will need to be converted to appropriate datetime formats, and invalid or inconsistent dates will need to be checked before calculating processing time. Duplicate applications and unrealistic numerical values, such as building areas or heights, will also be investigated. Post-decision variables will be excluded from the predictors to prevent data leakage.
 - Proposed Baseline: A baseline regression model that predicts the median processing time of the training data for all applications.
@@ -30,7 +30,7 @@ The dataset contains sensitive information, including applicant names and addres
 
 # Running the Notebooks
 1. Data Inspection and Audit(1).ipynb: This notebook examines the dataset, looking for missing values, duplicates, target distribution and any possible outliers.
-2. Data Preparation and Baseline(4).ipynb: This notebook conducts data cleaning, selects predictors, creates the train/test split, states the preprrocessing pipeline and evaluates the baseline regression model.
+2. Data Preparation and Baseline(4).ipynb: This notebook conducts data cleaning, selects predictors, creates the train/test split, states the preprocessing pipeline and evaluates the baseline regression model.
 
 To run the notebooks:
 1. Download/copy the GitHub repository.
@@ -44,20 +44,20 @@ For each notebook, select restart kernel and run all cells to execute the code i
 
 # Project Progress
 The following work has been completed: 
-- Initial dataset inspection and data-quality assesment.
+- Initial dataset inspection and data-quality assessment.
 - Investigation of exact duplicates and repeated apllication references.
 - Creation and Validation of the processing-time target variable.
 - Missing-data analysis using the supporting BCMS document.
 - Initial feature selection and data leakage assesment.
 - Investigation of invalid and extreme numerical values.
-- Final Preparation of the modelling dataset containing 42.711 observations.
+- Final Preparation of the modelling dataset containing 42,711 observations.
 - Selection of 12 predictor variables.
 - Constructed  a preprocessing pipeline, using numerical and categorical imputation and one-hot encoding.
 - Implementation of a median DummyRegressor baseline.
 - Evaluation of the baseline using MAE and RMSE. 
 
 
-# Requiremnts
+# Requirements
 - Python
 - Jupyter Notebook
 - Required packages listed in requiremnts.txt
