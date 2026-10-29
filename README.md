@@ -65,4 +65,4 @@ Model performance will be evaluated using Mean Absolute Error (MAE) and Root Mea
 The project considers data leakage, incomplete records, potentially erroneous measurements and the handling of personal information. direct application identifiers will not be used as model predictors. 
 
 # Assistance and References
-External documentation, code sources and any use of generative AI or coding assistants will be acknowledged in the project submission. 
+ChatGPT by OpenAI was used as a learning resource throughout this project to help understand machine learning concepts and help manage the assignment requirements. AI was used to help find data-cleaning approaches and to help find useful documentation for Python online. The CT4101 lecture notes and the pandas website were the main resources of learning and finding examples of code. https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html
