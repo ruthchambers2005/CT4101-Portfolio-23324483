@@ -8,7 +8,7 @@ This is a regression question. The outcome of the machine learning model is to p
 # How to download the data and data Information
 - Go to https://data.gov.ie/dataset/applications
 - Download the csv file entitled 'applications'
-- Create a folder names Data inside the project directory and save the downloaded csv file there. 
+- Create a folder named CT4101 Portfolio and then a folder inside that called Data inside the project directory and save the downloaded csv file there. 
 
 - Name: FSC, DAC, Dispensation & Relaxation Applications
 - Source: National Building Control Office, from data.gov.ie
