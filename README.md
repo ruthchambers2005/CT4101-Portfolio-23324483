@@ -27,7 +27,19 @@ Potential missing values in application characteristics and decision dates will 
 The dataset contains sensitive information, including applicant names and addresses. These variables will be excluded from modelling as they are unnecessary for predicting processing time. Differences in predicted processing times between local authorities or application types will be interpreted carefully and will not automatically be treated as evidence of differences in authority performance. Predictions will be treated as estimates rather than guarantees of how long an individual application will take.
 -The data will be split via a time-based split using submission date.
 
+# Running the Notebooks
+1. Data Inspection and Audit(1).ipynb: This notebook examines the dataset, looking for missing values, duplicates, target distribution and any possible outliers.
+2. Data Preparation and Baseline(4).ipynb: This notebook conducts data cleaning, selects predictors, creates the train/test split, states the preprrocessing pipeline and evaluates the baseline regression model.
 
+To run the notebooks:
+1. Download/copy the GitHub repository.
+2. Download the dataset using the instructions stated above.
+3. Install required Python packages using pip -r requirements.txt.
+4. Open Jupyter Notebook.
+5. Run the data instpection and audit first.
+6. Run the data preparation and baseline.
+
+For each notebook, select restart kernel and run all cells to execute the code in order. 
 
 # Project Progress
 The following work has been completed: 
