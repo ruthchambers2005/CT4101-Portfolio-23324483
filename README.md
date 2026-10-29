@@ -1,5 +1,5 @@
 # CT4101-Portfolio-23324483: Predicting Processing Times for Building Control Applications in Ireland
-Portfolio assignment for CT4101 machine learning module. Regression or Classification Problem.
+Portfolio assignment for CT4101 machine learning module. This project investigates a supervised regression problem.
 
 Prediction question: Can characteristics known about a building control application at submission be used to predict the time taken for a decision to be reached? 
 This is a regression question. The outcome of the machine learning model is to predict how many days it takes for a building control application to be approved/rejected based on the characteristics of the application.  
@@ -8,6 +8,7 @@ This is a regression question. The outcome of the machine learning model is to p
 # How to download the data and data Information
 - Go to https://data.gov.ie/dataset/applications
 - Download the csv file entitled 'applications'
+- Create a folder names Data inside the project directory and save the downloaded csv file there. 
 
 - Name: FSC, DAC, Dispensation & Relaxation Applications
 - Source: National Building Control Office, from data.gov.ie
@@ -17,7 +18,7 @@ This is a regression question. The outcome of the machine learning model is to p
 # Other Information about this project
 - Target variable:  Application processing time in days, obtained from date of submission and date of decision
 - Main Input Features: Application type, local authority, classification and use of the proposed building/works, construction type, floor area, number of storeys and site area. 
-- Approximate Number of Records: 42,862
+- Approximate Number of Records: 42,862, after cleaning and preparation: 42,711
 - Data-Quality Issues:
 Potential missing values in application characteristics and decision dates will need to be investigated. Date variables will need to be converted to appropriate datetime formats, and invalid or inconsistent dates will need to be checked before calculating processing time. Duplicate applications and unrealistic numerical values, such as building areas or heights, will also be investigated. Post-decision variables will be excluded from the predictors to prevent data leakage.
 - Proposed Baseline: A baseline regression model that predicts the median processing time of the training data for all applications.
@@ -25,7 +26,7 @@ Potential missing values in application characteristics and decision dates will 
 - Evaluation Metrics: Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE)
 - Privacy, Fairness, Misuse, and Responsible ML Risks:
 The dataset contains sensitive information, including applicant names and addresses. These variables will be excluded from modelling as they are unnecessary for predicting processing time. Differences in predicted processing times between local authorities or application types will be interpreted carefully and will not automatically be treated as evidence of differences in authority performance. Predictions will be treated as estimates rather than guarantees of how long an individual application will take.
--The data will be split via a time-based split using submission date.
+  An 80/20 time-based split was used based on submission date, earlier applications used for training and later applications retained for modelling. 
 
 # Running the Notebooks
 1. Data Inspection and Audit(1).ipynb: This notebook examines the dataset, looking for missing values, duplicates, target distribution and any possible outliers.
@@ -34,7 +35,7 @@ The dataset contains sensitive information, including applicant names and addres
 To run the notebooks:
 1. Download/copy the GitHub repository.
 2. Download the dataset using the instructions stated above.
-3. Install required Python packages using pip -r requirements.txt.
+3. Install required Python packages using pip install -r requirements.txt.
 4. Open Jupyter Notebook.
 5. Run the data instpection and audit first.
 6. Run the data preparation and baseline.
@@ -49,6 +50,11 @@ The following work has been completed:
 - Missing-data analysis using the supporting BCMS document.
 - Initial feature selection and data leakage assesment.
 - Investigation of invalid and extreme numerical values.
+- Final Preparation of the modelling dataset containing 42.711 observations.
+- Selection of 12 predictor variables.
+- Constructed  a preprocessing pipeline, using numerical and categorical imputation and one-hot encoding.
+- Implementation of a median DummyRegressor baseline.
+- Evaluation of the baseline using MAE and RMSE. 
 
 
 # Requiremnts
@@ -65,4 +71,4 @@ Model performance will be evaluated using Mean Absolute Error (MAE) and Root Mea
 The project considers data leakage, incomplete records, potentially erroneous measurements and the handling of personal information. direct application identifiers will not be used as model predictors. 
 
 # Assistance and References
-ChatGPT by OpenAI was used as a learning resource throughout this project to help understand machine learning concepts and help manage the assignment requirements. AI was used to help find data-cleaning approaches and to help find useful documentation for Python online. The CT4101 lecture notes and the pandas website were the main resources of learning and finding examples of code. https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html
+ChatGPT by OpenAI was used as a learning resource throughout this project to help understand machine learning concepts and help manage the assignment requirements. AI was used to help find data-cleaning approaches, understand preprocessing pipelines and to help find useful documentation for Python online. The CT4101 lecture notes and the pandas website were the main resources of learning and finding examples of code. https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html
