@@ -77,10 +77,10 @@ A median baseline model and three learned regression models (Linear Regression, 
 Model performance was assessed using Mean Absolute Error (MAE), Root Mean Squared Error (RMSE) and R².
 
 | Model | MAE (days) | RMSE (days) |
-|:---------------------------|:------|:------|:------|
+|---|---:|---:|
 | Median Baseline | 32.861 | 52.781 |
-| Linear Regression | 50.124 | 59.243 | 
-| Decision Tree Regression | 45.941 | 63.530 | 
+| Linear Regression | 50.124 | 59.243 |
+| Decision Tree Regression | 45.941 | 63.530 |
 | KNN Regression | 51.441 | 76.800 |
 
 The median baseline achieved the lowest MAE and RMSE. Among the learned regression models, Decision Tree Regression achieved the lowest MAE, while Linear Regression achieved the lowest RMSE.
