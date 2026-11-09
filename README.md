@@ -77,7 +77,7 @@ A median baseline model and three learned regression models (Linear Regression, 
 Model performance was assessed using Mean Absolute Error (MAE), Root Mean Squared Error (RMSE) and R².
 
 | Model | MAE (days) | RMSE (days) |
-|---------------------------|------|------|------|
+|:---------------------------|:------|:------|:------|
 | Median Baseline | 32.861 | 52.781 |
 | Linear Regression | 50.124 | 59.243 | 
 | Decision Tree Regression | 45.941 | 63.530 | 
