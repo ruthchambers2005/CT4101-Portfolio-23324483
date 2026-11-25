@@ -32,7 +32,7 @@ The dataset contains sensitive information, including applicant names and addres
 # Running the Notebooks
 1. Data Inspection and Audit(1).ipynb: This notebook examines the dataset, looking for missing values, duplicates, target distribution and any possible outliers.
 2. Data Preparation and Baseline(4).ipynb: This notebook conducts data cleaning, selects predictors, creates the train/test split, states the preprocessing pipeline and evaluates the baseline regression model.
-3. Model Comparison and Evaluation.ipynb: This notebook trains evaluates 3 regression models(Linear Regression, Decision Tree Regression and KNN Regression) to see how they perform in comparison to the median baseline model. It also includes model visualisation and error analysis. 
+3. Model Comparison and Evaluation (2).ipynb: This notebook trains evaluates 3 regression models(Linear Regression, Decision Tree Regression and KNN Regression) to see how they perform in comparison to the median baseline model. It also includes model visualisation and error analysis. 
 
 To run the notebooks:
 1. Download/copy the GitHub repository.
